@@ -10,3 +10,10 @@
 *:after {
   @include box-sizing(border-box);
 }
+
+ul, menu, dir {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style-type: none;
+}

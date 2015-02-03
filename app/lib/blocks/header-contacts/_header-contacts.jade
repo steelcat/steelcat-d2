@@ -1,0 +1,8 @@
+mixin header-contacts(phone_code, phone_number, mail)
+	ul.header-contacts
+		li.header-contacts__phone
+			a(class='header-contacts__phone-link' href='tel:#{phone_code}#{phone_number}')
+				sup(class='header-contacts__phone-code') #{phone_code}
+				|#{phone_number}
+		li.header-contacts__mail
+			a(class='header-contacts__mail-link' href='mailto:#{mail}') #{mail}
