@@ -9,8 +9,15 @@
   margin-bottom: 32px;
   @include clearfix;
 }
-.product-image { float: left; display: inline-block; vertical-align: middle; width: 190px; }
-.product-image__img { display: block; margin: 0 auto; }
+.product-image { float: left; position: relative; height: 160px; width: 190px; }
+.product-image__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 .product-info { float: left;display: inline-block; width: 540px; font: 15px/22px ElektraLightPro-Regular; margin-top: 18px; }
 .product-link {
   color: #00b9fe;

@@ -427,13 +427,17 @@ a {
 
 .product-image {
   float: left;
-  display: inline-block;
-  vertical-align: middle;
+  position: relative;
+  height: 160px;
   width: 190px; }
 
 .product-image__img {
-  display: block;
-  margin: 0 auto; }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 .product-info {
   float: left;
@@ -459,7 +463,75 @@ a {
   color: #5c7b98;
   font: 15px/20px ElektraLightPro-Regular, serif; }
 
+.about__title {
+  font: 25px/1.1em ElektraLightPro-Bold, serif;
+  margin-bottom: 9px; }
+
 .footer {
   height: 238px;
   padding: 60px 0 0;
   background: url('../img/footer-bg.png'); }
+
+.footer-links {
+  float: left;
+  margin-left: 119px; }
+
+.footer-links-list {
+  float: left;
+  display: inline-block;
+  margin-right: 68px; }
+
+.footer-links-link {
+  color: #ffffff;
+  font: 15px/25px ElektraLightPro-Regular; }
+
+.footer-links-link--active {
+  text-decoration: none; }
+
+.social {
+  float: right; }
+
+.social-apps {
+  float: left;
+  margin-bottom: 28px; }
+
+.social-apps__icon {
+  margin-right: 5px; }
+
+.appstore {
+  float: left;
+  display: block;
+  height: 32px;
+  width: 90px;
+  background-image: url('../img/social/appstore.png'); }
+
+.googleplay {
+  float: left;
+  display: block;
+  height: 32px;
+  width: 90px;
+  background-image: url('../img/social/googleplay.png'); }
+
+.social-nets__icon {
+  margin-right: 12px; }
+
+.vk {
+  float: left;
+  display: block;
+  height: 36px;
+  width: 37px;
+  background-image: url('../img/social/vk.png'); }
+
+.facebook {
+  float: left;
+  display: block;
+  height: 36px;
+  width: 37px;
+  background-image: url('../img/social/facebook.png'); }
+
+.twitter {
+  float: left;
+  display: block;
+  height: 36px;
+  width: 37px;
+  background-image: url('../img/social/twitter.png'); }
