@@ -1,0 +1,27 @@
+mixin content(product_titles,product_desc)
+	.content
+		ul.product-list
+			each product_title, index in product_titles
+				li.product-list__item
+					.product-image
+						img(class='product-image__img' src='img/products/'+(index+1)+'.png')
+					.product-info
+						h3.product-title
+							a(class='product-link' href='') #{product_titles[index]}
+						dl.product-desc
+							dt.product-desc__name Артикул:
+							dd.product-desc__def
+								| 453535345,
+							dt.product-desc__name Опция:
+							dd.product-desc__def
+								| включена,
+							dt.product-desc__name Цвет:
+							dd.product-desc__def
+								| серебристый,
+							dt.product-desc__name Размер:
+							dd.product-desc__def
+								| 1280х1245х90,
+							dt.product-desc__name Вес:
+							dd.product-desc__def
+								| 9 кг.
+		block

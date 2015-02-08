@@ -1,0 +1,21 @@
+.content { width: 740px; float: right; margin-bottom: 80px; }
+.product-list__item {
+  height: 160px;
+  width: 740px;
+  border: 1px solid #dbe1eb;
+  box-shadow: 0 0 5px 1px #dbe1eb;
+  float: left; color: #5c7b98;
+  font: 15px/42px ElektraLightPro-Regular;
+  margin-bottom: 32px;
+  @include clearfix;
+}
+.product-image { float: left; display: inline-block; vertical-align: middle; width: 190px; }
+.product-image__img { display: block; margin: 0 auto; }
+.product-info { float: left;display: inline-block; width: 540px; font: 15px/22px ElektraLightPro-Regular; margin-top: 18px; }
+.product-link {
+  color: #00b9fe;
+  font-size: 1em;
+  font-weight: normal;
+}
+.product-desc__name, .product-desc__def { display: inline; }
+.product-desc__def { margin: 0; }

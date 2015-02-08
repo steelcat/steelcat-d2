@@ -1,0 +1,8 @@
+mixin header-menu(menu_items,menu_active)
+	nav(class='header-menu wrapper')
+		ul.header-menu__list
+			each menu_item in menu_items
+				li(class='header-menu__item' class=((menu_item === menu_active) ? ' header-menu__item--active' : ''))
+					.header-menu__item-back-top
+					a(class='header-menu__item-link' href='') #{menu_item}
+					.header-menu__item-back-bottom

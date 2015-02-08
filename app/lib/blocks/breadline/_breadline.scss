@@ -1,0 +1,12 @@
+.breadline { height: 30px; margin-bottom: 18px; }
+.breadline-breadcrumbs { float: left; }
+.breadline-breadcrumbs__item { float: left; padding-top: 8px; color: #5c7b98; font: 15px/15px ElektraLightPro-Regular; }
+.breadline-breadcrumbs__item-link { color: #00b9fe; font: 15px/15px ElektraLightPro-Regular; text-decoration: underline; }
+.breadline-breadcrumbs__item-link--active { color: #5c7b98; text-decoration: none; }
+.divider { padding-left: 5px; padding-right: 6px; }
+.breadline-select-grid { float: right; position: relative; border: 1px solid #dae1eb; margin-right: 30px; height: 26px; width: 131px; font: 14px/14px ElektraLightPro-Regular; }
+.breadline-select-grid--select { height: 24px; width: 129px; position: relative; z-index: 10; }
+.breadline-select-page { float: right; padding-top: 8px; }
+.breadline-select-page__item { float: left; margin-left: 9px; }
+.breadline-select-page__item-link { color: #00b9fe; font: 15px/15px ElektraLightPro-Regular; }
+.select-bg { position: absolute; right: 0; top: 0; height: 24px; width: 26px; background: url('../img/select-bg.png') right center no-repeat; z-index: 20; cursor: pointer; }

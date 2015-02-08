@@ -1,0 +1,10 @@
+.sidebar { float: left; width: 230px; }
+.sidebar-menu__item {
+  padding-left: 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #dae1eb;
+  border-top: 1px solid #ffffff; }
+.sidebar-menu__item:hover { background: #dce6f0; }
+.sidebar-menu__item--active { background: #00b9fe; }
+.sidebar-menu__item-link { display: block; width: 100%; color: #5c7b98; height: 29px; font: 15px/29px ElektraLightPro-Regular; text-decoration: none; }
+.sidebar-menu__item-link--active { color: #ffffff; }

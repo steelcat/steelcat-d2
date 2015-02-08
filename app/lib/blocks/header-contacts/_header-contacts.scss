@@ -1,7 +1,7 @@
-.header-contacts { float: right; padding-top: 24px; @include clearfix; }
-.header-contacts__phone { float: right; color: #5c7b98; font: 25px/25px ElektraLightPro-Bold; }
+.header-contacts { float: right; padding-top: 23px; @include clearfix; }
+.header-contacts__phone { float: right; color: #5c7b98; font: 25px/25px ElektraLightPro-Regular; }
 .header-contacts__phone-code { color: #00b9fe; font: 15px/25px ElektraLightPro-Bold; }
-.header-contacts__phone-link, .header-contacts__phone-link:hover { color: #5c7b98; font: 25px/25px ElektraLightPro-Bold; text-decoration: none; }
+.header-contacts__phone-link, .header-contacts__phone-link:hover { color: #5c7b98; text-decoration: none; }
 .header-contacts__mail { color: #613993; font: 15px/29px ElektraLightPro-Bold; }
-.header-contacts__mail-link { float: right; color: #613993; font: 15px/29px ElektraLightPro-Bold; text-decoration: none; }
+.header-contacts__mail-link { float: right; color: #613993; font: 17px/25px ElektraLightPro-Regular; text-decoration: none; }
 .header-contacts__mail-link:hover { text-decoration: underline; }

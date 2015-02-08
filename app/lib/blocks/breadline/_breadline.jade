@@ -1,0 +1,20 @@
+mixin breadline
+	.breadline
+		.wrapper
+			ul.breadline-breadcrumbs
+				li.breadline-breadcrumbs__item
+					a(class='breadline-breadcrumbs__item-link' href='') Главная
+				li.breadline-breadcrumbs__item.divider >
+				li.breadline-breadcrumbs__item
+					a(class='breadline-breadcrumbs__item-link breadline-breadcrumbs__item-link--active' href='')  Каталог
+			ul.breadline-select-page
+				each item in [1, 2, 3, 4, 5]
+					li.breadline-select-page__item
+						a(class='breadline-select-page__item-link' href='') #{item}
+				li.breadline-select-page__item
+					a(class='breadline-select-page__item-link' href='') Все
+			.breadline-select-grid
+				select.breadline-select-grid--select
+					option Сеткой
+					option Линиями
+				.select-bg

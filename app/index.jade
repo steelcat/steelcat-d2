@@ -1,14 +1,19 @@
 include ../jess/_jess
 include lib/_lib
 doctype html
-html
+html(lang="ru")
 	+head('Эппл Shop')
+		
 body.page
 	+header
-		.wrapper
+		.header-top.wrapper
 			+logo('img/header-logo.png','/public','header-logo')
 			+header-contacts('+7 (921)',' 322 12 32','manager@company.com')
-
-	nav.main-menu
+		+header-menu(['Мобильные телефоны','Планшеты','Mp3 плееры','Персональные компьютеры','Ноутбуки','Apple TV','Аксессуары'],'Планшеты')
+	+breadline
+	.wrapper
+		+sidebar(['iPhone','iPad','iMac','Macbook','iPod','Другое'],'iPhone')
+		+content(['Apple Thunderbolt Display 27"','Apple iMac 27"','iPhone 5s Gold','iPad Air Wi-Fi + Cellular 128GB - Silver','Apple iPod nano 7G 16 ГБ Blue','Роутер Wi-Fi Apple AirPort Extreme Base Station'])
+			+about
 	+footer
-		.wrapper
+script(src='js/main.js')

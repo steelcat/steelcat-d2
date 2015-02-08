@@ -1,0 +1,26 @@
+.header-menu {
+  height: 42px;
+  margin-bottom: 15px;
+}
+.header-menu__list { float: right; margin-right: 6px; }
+.header-menu__item {
+  display: inline-block;
+  position: relative;
+}
+.header-menu__item-link {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 18px;
+  color: #5c7b98;
+  display: block;
+  height: 42px;
+  font: 15px/42px ElektraLightPro-Regular;
+  text-decoration: none;
+  z-index: 20; }
+.header-menu__item-back-top { position: absolute; right: 0; top: 0; width: 100%; background-color: #f7f7f7; border-right: 1px solid #d7dfeb; height: 21px; transform: skewX(35deg); z-index: 10; }
+.header-menu__item-back-bottom { position: absolute; right: 0; bottom: 0; width: 100%; background-color: #f7f7f7; border-right: 1px solid #d7dfeb; height: 21px; transform: skewX(-35deg); z-index: 10; }
+.header-menu__item:hover > .header-menu__item-back-top { background-color: #dce6f0; }
+.header-menu__item:hover > .header-menu__item-back-bottom { background-color: #dce6f0; }
+.header-menu__item--active > .header-menu__item-back-top { background-color: #00b9fe; }
+.header-menu__item--active > .header-menu__item-back-bottom { background-color: #00b9fe; }
+.header-menu__item--active > .header-menu__item-link { color: #ffffff; }

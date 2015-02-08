@@ -1,9 +1,10 @@
 // Centered wrapper
 .wrapper {
-  width: 1000px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 0;
   @include clearfix;
 }
