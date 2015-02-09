@@ -3,11 +3,10 @@ include lib/_lib
 doctype html
 html(lang="ru")
 	+head('Эппл Shop')
-		
 body.page
 	+header
 		.header-top.wrapper
-			+logo('img/header-logo.png','/public','header-logo')
+			+logo('img/header-logo.png','/','header-logo')
 			+header-contacts('+7 (921)',' 322 12 32','manager@company.com')
 		+header-menu(['Мобильные телефоны','Планшеты','Mp3 плееры','Персональные компьютеры','Ноутбуки','Apple TV','Аксессуары'],'Планшеты')
 	+breadline
@@ -19,4 +18,8 @@ body.page
 		+logo('img/footer-logo.png','/public','footer-logo')
 		+footer-links
 		+social
+	a(class='button-up' href='') Наверх
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+script(src='js/jquery.jscrollpane.js')
+script(src='js/jquery.simpleselect.js')
 script(src='js/main.js')

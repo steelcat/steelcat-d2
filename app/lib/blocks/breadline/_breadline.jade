@@ -14,7 +14,6 @@ mixin breadline
 				li.breadline-select-page__item
 					a(class='breadline-select-page__item-link' href='') Все
 			.breadline-select-grid
-				select.breadline-select-grid--select
-					option Сеткой
-					option Линиями
-				.select-bg
+				select.content__options-select
+					option( value='lines') Линиями
+					option( value='cells') Сеткой

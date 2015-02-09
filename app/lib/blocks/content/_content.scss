@@ -21,8 +21,40 @@
 .product-info { float: left;display: inline-block; width: 540px; font: 15px/22px ElektraLightPro-Regular; margin-top: 18px; }
 .product-link {
   color: #00b9fe;
-  font-size: 1em;
+  font-size: 15px;
   font-weight: normal;
 }
 .product-desc__name, .product-desc__def { display: inline; }
 .product-desc__def { margin: 0; }
+
+.product-list--cells {
+  width: 765px;
+}
+
+.product-list--cells .product-info { width: 230px; padding-left: 16px; padding-right: 16px; margin-top: 0; }
+
+.product-list--cells .product-list__item {
+  width: 230px;
+  min-height: 359px;
+  margin: 0px 25px 20px 0px;
+}
+
+.product-list--cells li.product-list__item .product-image {
+  width: 230px;
+}
+
+.product-list--cells .product-desc {
+  font: 14px/19px ElektraLightPro-Regular;
+}
+
+.product-list--cells .product-desc__name {
+  clear: both;
+  float: left;
+  margin: 0 0 5px;
+}
+
+.product-list--cells .product-desc__def {
+  float: right;
+}
+
+.product-list--cells .product-image { height: 140px; }

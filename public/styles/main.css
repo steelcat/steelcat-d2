@@ -180,6 +180,18 @@ a {
   font: 15px/20px ElektraLightPro-Regular, serif;
   min-width: 1000px; }
 
+.button-up {
+  height: 39px;
+  width: 77px;
+  background-image: url('../img/button-up.png');
+  bottom: 290px;
+  position: fixed;
+  right: 10px;
+  color: #ffffff;
+  font: 15px/39px ElektraLightPro-Bold, serif;
+  text-decoration: none;
+  text-align: center; }
+
 .wrapper {
   width: 1200px;
   margin-right: auto;
@@ -195,7 +207,7 @@ a {
 
 .header {
   height: 120px;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   width: 100%;
   background: radial-gradient(circle, #f1f5f9, #d9e4ef) repeat scroll 0 0 rgba(0, 0, 0, 0); }
 
@@ -344,17 +356,11 @@ a {
 .breadline-select-grid {
   float: right;
   position: relative;
-  border: 1px solid #dae1eb;
-  margin-right: 30px;
-  height: 26px;
-  width: 131px;
-  font: 14px/14px ElektraLightPro-Regular; }
+  margin-right: 30px; }
 
-.breadline-select-grid--select {
-  height: 24px;
-  width: 129px;
-  position: relative;
-  z-index: 10; }
+.breadline-select-grid-select {
+  position: absolute;
+  left: -9999px; }
 
 .breadline-select-page {
   float: right;
@@ -368,22 +374,120 @@ a {
   color: #00b9fe;
   font: 15px/15px ElektraLightPro-Regular; }
 
-.select-bg {
-  position: absolute;
+.content__inner:after {
+  clear: both; }
+
+.content__options-select {
+  text-align: left;
+  margin-left: 3px; }
+
+.content__options-select.opened .selectbox__display {
+  border-bottom: 0 none;
+  background-clip: padding-box;
+  padding-bottom: 1px; }
+
+.content__options-select.opened .selectbox__display:hover {
+  background: #edecec; }
+
+.content__options-select.opened .selectbox__dropdown {
+  left: 0;
   right: 0;
-  top: 0;
-  height: 24px;
+  width: 135px; }
+
+.content__options-select .selectbox__dropdown {
+  position: absolute;
+  top: 100%;
+  width: 133px;
+  right: auto;
+  left: -9999px;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  border-top: 0 none;
+  background-clip: padding-box;
+  z-index: 1000; }
+
+.content__options-select .selectbox__inner {
+  position: relative; }
+
+.content__options-select .selectbox__display {
+  width: 133px;
+  border: 1px solid #bdbdbd;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative; }
+
+.content__options-select .selectbox__display:after, .content__options-select .selectbox__display:before {
+  content: "";
+  display: table; }
+
+.content__options-select .selectbox__display:after {
+  clear: both; }
+
+.content__options-select .selectbox__display-title {
+  float: left;
+  width: 102px; }
+
+.content__options-select .selectbox__title-text {
+  line-height: 27px;
+  padding-left: 11px;
+  height: 27px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.content__options-select .selectbox__display-btn {
   width: 26px;
-  background: url('../img/select-bg.png') right center no-repeat;
-  z-index: 20;
-  cursor: pointer; }
+  float: left;
+  height: 27px;
+  background: 0 0;
+  top: 0;
+  right: 0;
+  position: absolute; }
+
+.content__options-select .selectbox__btn-icon {
+  width: 26px;
+  height: 27px;
+  background: url(../img/select-tr.png) center center no-repeat; }
+
+.content__options-select .selectbox__dropdown-item.selected .selectbox__item-link {
+  background: #edecec; }
+
+.content__options-select .selectbox__item-link {
+  font-size: 14px;
+  line-height: 14px;
+  color: #5c7b98;
+  padding-left: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  display: block; }
+
+.content__options-select .selectbox__item-link:hover {
+  background: #edecec; }
+
+.content__options-select .selectbox__title-text {
+  font-size: 14px;
+  color: #5c7b98; }
+
+.content__options-select .selectbox__display-btn {
+  background-color: #00b9fe; }
+
+.content__options-select .selected .selectbox__item-link {
+  color: #bed1e3;
+  background-color: transparent !important; }
+
+.content__options-select .selectbox__dropdown {
+  max-height: 120px;
+  overflow: auto; }
 
 .sidebar {
   float: left;
   width: 230px; }
 
 .sidebar-menu__item {
-  padding-left: 20px;
   background: #f7f7f7;
   border-bottom: 1px solid #dae1eb;
   border-top: 1px solid #ffffff; }
@@ -391,19 +495,40 @@ a {
 .sidebar-menu__item:hover {
   background: #dce6f0; }
 
-.sidebar-menu__item--active {
+.sidebar-menu__item.active {
   background: #00b9fe; }
 
 .sidebar-menu__item-link {
   display: block;
+  padding-left: 20px;
   width: 100%;
   color: #5c7b98;
-  height: 29px;
   font: 15px/29px ElektraLightPro-Regular;
   text-decoration: none; }
 
-.sidebar-menu__item-link--active {
+.sidebar-menu__item.active .sidebar-menu__item-link {
   color: #ffffff; }
+
+.sidebar-menu__item-inner {
+  padding-left: 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #dae1eb;
+  border-top: 1px solid #ffffff; }
+
+.sidebar-menu__item-inner:hover {
+  background: #dce6f0; }
+
+.sidebar-menu__item-link-inner {
+  display: block;
+  padding-left: 14px;
+  background: url("../img/tr-r.png") no-repeat scroll 3px 9px rgba(0, 0, 0, 0);
+  width: 100%;
+  color: #5c7b98;
+  font: 15px/29px ElektraLightPro-Regular;
+  text-decoration: none; }
+
+.sidebar-menu__inner-list {
+  display: none; }
 
 .content {
   width: 740px;
@@ -448,7 +573,7 @@ a {
 
 .product-link {
   color: #00b9fe;
-  font-size: 1em;
+  font-size: 15px;
   font-weight: normal; }
 
 .product-desc__name, .product-desc__def {
@@ -456,6 +581,37 @@ a {
 
 .product-desc__def {
   margin: 0; }
+
+.product-list--cells {
+  width: 765px; }
+
+.product-list--cells .product-info {
+  width: 230px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 0; }
+
+.product-list--cells .product-list__item {
+  width: 230px;
+  min-height: 359px;
+  margin: 0px 25px 20px 0px; }
+
+.product-list--cells li.product-list__item .product-image {
+  width: 230px; }
+
+.product-list--cells .product-desc {
+  font: 14px/19px ElektraLightPro-Regular; }
+
+.product-list--cells .product-desc__name {
+  clear: both;
+  float: left;
+  margin: 0 0 5px; }
+
+.product-list--cells .product-desc__def {
+  float: right; }
+
+.product-list--cells .product-image {
+  height: 140px; }
 
 .about {
   display: block;
@@ -471,6 +627,9 @@ a {
   height: 238px;
   padding: 60px 0 0;
   background: url('../img/footer-bg.png'); }
+
+.footer-logo {
+  margin-top: 38px; }
 
 .footer-links {
   float: left;
@@ -518,20 +677,20 @@ a {
 .vk {
   float: left;
   display: block;
-  height: 36px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
   background-image: url('../img/social/vk.png'); }
 
 .facebook {
   float: left;
   display: block;
-  height: 36px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
   background-image: url('../img/social/facebook.png'); }
 
 .twitter {
   float: left;
   display: block;
-  height: 36px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
   background-image: url('../img/social/twitter.png'); }

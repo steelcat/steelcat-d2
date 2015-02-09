@@ -2,5 +2,17 @@ mixin sidebar(menu_items,menu_active)
 	.sidebar
 		ul.sidebar-menu
 			each menu_item in menu_items
-				li(class='sidebar-menu__item' class=((menu_item === menu_active) ? ' sidebar-menu__item--active' : ''))
-					a(class='sidebar-menu__item-link sidebar-menu__item-link' class=((menu_item === menu_active) ? ' sidebar-menu__item-link--active' : '') href='') #{menu_item}
+				li(class='sidebar-menu__item')
+					a(class='sidebar-menu__item-link sidebar-menu__item-link--trigger' href='') #{menu_item}
+					ul.sidebar-menu__inner-list
+						li.sidebar-menu__item-inner
+							a(class='sidebar-menu__item-link-inner' href='') Phone 4s
+						li.sidebar-menu__item-inner
+							a(class='sidebar-menu__item-link-inner' href='') iPhone 5
+						li.sidebar-menu__item-inner
+							a(class='sidebar-menu__item-link-inner' href='') iPhone 5s с эксклюзивным дизайном
+						li.sidebar-menu__item-inner
+							a(class='sidebar-menu__item-link-inner' href='') iPhone 6
+						li.sidebar-menu__item-inner
+							a(class='sidebar-menu__item-link-inner' href='') iPhone 6 plus
+

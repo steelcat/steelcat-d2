@@ -3,3 +3,15 @@
     font: 15px/20px ElektraLightPro-Regular,serif;
     min-width: 1000px;
 }
+.button-up {
+    height: 39px;
+    width: 77px;
+    background-image: url('../img/button-up.png');
+    bottom: 290px;
+    position: fixed;
+    right: 10px;
+    color: #ffffff;
+    font: 15px/39px ElektraLightPro-Bold,serif;
+    text-decoration: none;
+    text-align: center;
+}

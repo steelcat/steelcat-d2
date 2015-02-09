@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8"/>
     <title>Эппл Shop</title>
-    <link href="styles/main.css?" rel="stylesheet"/>
+    <link href="styles/public/styles/jquery.jscrollpane.css" rel="stylesheet"/>
+    <link href="styles/main.css" rel="stylesheet"/>
   </head>
 </html>
 <body class="page">
   <header class="header">
     <div class="header-top wrapper">
-      <div class="logo header-logo"><a href="/public" class="logo__link"><img src="img/header-logo.png" class="logo__img"/></a></div>
+      <div class="logo header-logo"><a href="/" class="logo__link"><img src="img/header-logo.png" class="logo__img"/></a></div>
       <ul class="header-contacts">
         <li class="header-contacts__phone"><a href="tel:+7 (921) 322 12 32" class="header-contacts__phone-link"><sup class="header-contacts__phone-code">+7 (921)</sup> 322 12 32</a></li>
         <li class="header-contacts__mail"><a href="mailto:manager@company.com" class="header-contacts__mail-link">manager@company.com</a></li>
@@ -64,23 +65,70 @@
         <li class="breadline-select-page__item"><a href="" class="breadline-select-page__item-link">Все</a></li>
       </ul>
       <div class="breadline-select-grid">
-        <select class="breadline-select-grid--select">
-          <option>Сеткой</option>
-          <option>Линиями</option>
+        <select class="content__options-select">
+          <option value="lines">Линиями</option>
+          <option value="cells">Сеткой</option>
         </select>
-        <div class="select-bg"></div>
       </div>
     </div>
   </div>
   <div class="wrapper">
     <div class="sidebar">
       <ul class="sidebar-menu">
-        <li class="sidebar-menu__item  sidebar-menu__item--active"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link  sidebar-menu__item-link--active">iPhone</a></li>
-        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link">iPad</a></li>
-        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link">iMac</a></li>
-        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link">Macbook</a></li>
-        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link">iPod</a></li>
-        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link">Другое</a></li>
+        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link--trigger">iPhone</a>
+          <ul class="sidebar-menu__inner-list">
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">Phone 4s</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5s с эксклюзивным дизайном</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6 plus</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link--trigger">iPad</a>
+          <ul class="sidebar-menu__inner-list">
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">Phone 4s</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5s с эксклюзивным дизайном</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6 plus</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link--trigger">iMac</a>
+          <ul class="sidebar-menu__inner-list">
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">Phone 4s</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5s с эксклюзивным дизайном</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6 plus</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link--trigger">Macbook</a>
+          <ul class="sidebar-menu__inner-list">
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">Phone 4s</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5s с эксклюзивным дизайном</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6 plus</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link--trigger">iPod</a>
+          <ul class="sidebar-menu__inner-list">
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">Phone 4s</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5s с эксклюзивным дизайном</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6 plus</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menu__item"><a href="" class="sidebar-menu__item-link sidebar-menu__item-link--trigger">Другое</a>
+          <ul class="sidebar-menu__inner-list">
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">Phone 4s</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 5s с эксклюзивным дизайном</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6</a></li>
+            <li class="sidebar-menu__item-inner"><a href="" class="sidebar-menu__item-link-inner">iPhone 6 plus</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div class="content">
@@ -232,6 +280,9 @@
         <div class="social-nets"><a href="" class="vk social-nets__icon"></a><a href="" class="facebook social-nets__icon"></a><a href="" class="twitter social-nets__icon"></a></div>
       </div>
     </div>
-  </footer>
+  </footer><a href="" class="button-up">Наверх</a>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.jscrollpane.js"></script>
+<script src="js/jquery.simpleselect.js"></script>
 <script src="js/main.js"></script>
